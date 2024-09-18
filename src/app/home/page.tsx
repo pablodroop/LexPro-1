@@ -19,13 +19,12 @@ export default function Home() {
 
           <Buttom variant="PRIMARY" title="Nossos Serviços"/>
         </div>
-        <div className="w-[32rem] h-[32rem]">
-          <div className="p-3 w-[100px] rounded bg-gradient-to-br from-brown400  via-brown500 via-70% to-brown300 to-100% ">
-            <h1>20</h1>
-            <span>anos de
-            experiência</span>
+        <div className="w-[34rem] h-[32rem] relative">
+          <div className="flex h-[10rem] w-[10rem] flex-col items-center justify-start rounded absolute bottom-0 left-[-4rem] bg-gradient-to-br from-brown400  via-brown500 via-70% to-brown300 to-100%">
+            <h1 className="text-[5.6rem] h-[7rem] text-white font-[200] font-inter">20</h1>
+            <span className="text-center text-brown300 text-sm font-bold uppercase">anos de experiência</span>
           </div>
-          <img className="object-cover" src="1.png" alt="Imagem de um advogado sorridente" />
+          <img className="object-cover h-[32rem]" src="1.png" alt="Imagem de um advogado sorridente" />
         </div>
       </section>
       <section></section>
