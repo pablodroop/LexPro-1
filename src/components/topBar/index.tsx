@@ -20,17 +20,23 @@ export function TopBar () {
                 </span>
             </div>
 
-            <nav className="flex items-center space-x-4">
-                <a href="">
-                  <FaInstagram className="fill-brown400 size-5"/>
-                </a>
-                <a href="">
-                  <FaYoutube className="fill-brown400 size-5"/>
-                </a>
-                <a href="">
-                  <FaLinkedin className="fill-brown400 size-5"/>
-                </a>
-            </nav>
+            <Nav/>
         </div>
+    )
+}
+
+export const Nav = () => {
+    return (
+        <nav className="flex items-center space-x-4">
+            <a href="">
+            <FaInstagram className="fill-brown400 size-5"/>
+            </a>
+            <a href="">
+            <FaYoutube className="fill-brown400 size-5"/>
+            </a>
+            <a href="">
+            <FaLinkedin className="fill-brown400 size-5"/>
+            </a>
+       </nav>  
     )
 }
