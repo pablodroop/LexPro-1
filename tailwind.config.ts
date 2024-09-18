@@ -25,6 +25,10 @@ const config: Config = {
       blue: 'hsl(var(--blue))',
       green: 'hsl(var(--green))',
       white: 'hsl(var(--white))',
+    },
+    screens: {
+      'tablet': '750px',
+      'cell': '600px',
     }
   },
   plugins: [],

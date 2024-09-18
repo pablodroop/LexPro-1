@@ -4,31 +4,31 @@ import { MdEmail } from "react-icons/md";
 
 export function TopBar () {
     return (
-        <div className="bg-gray900 w-full py-6 px-[8.5rem] flex items-center justify-between">
-            <div className="flex items-center space-x-10">
-                <span className="flex items-center space-x-2.5">
-                    <FaLocationDot size={20} className="fill-brown400"/>
+        <div className="bg-gray900 w-full py-6 px-8 tablet:px-[8.5rem] flex items-center justify-between">
+            <div className="flex items-center gap-10">
+                <span className="cell:flex text-nowrap hidden items-center space-x-2.5">
+                    <FaLocationDot className="fill-brown400 size-5"/>
                     <p className="text-[1rem] font-medium text-gray500">Rua 987, St. Pedro, Goiânia-GO.</p>
                 </span>
-                <span className="flex items-center space-x-2.5">
-                    <FaPhoneAlt size={20} className="fill-brown400"/>
+                <span className="text-nowrap flex items-center space-x-2.5">
+                    <FaPhoneAlt className="fill-brown400 size-5"/>
                     <p className="text-[1rem] font-medium text-gray500">+55 62 98765-4321</p>
                 </span>
-                <span className="flex items-center space-x-2.5">
-                    <MdEmail size={20} className="fill-brown400"/>
+                <span className="text-nowrap flex items-center space-x-2.5">
+                    <MdEmail className="fill-brown400 size-5"/>
                     <p className="text-[1rem] font-medium text-gray500">contato@lexpro.adv.br</p>
                 </span>
             </div>
 
             <nav className="flex items-center space-x-4">
                 <a href="">
-                  <FaInstagram size={20} className="fill-brown400"/>
+                  <FaInstagram className="fill-brown400 size-5"/>
                 </a>
                 <a href="">
-                  <FaYoutube size={20} className="fill-brown400"/>
+                  <FaYoutube className="fill-brown400 size-5"/>
                 </a>
                 <a href="">
-                  <FaLinkedin size={20} className="fill-brown400"/>
+                  <FaLinkedin className="fill-brown400 size-5"/>
                 </a>
             </nav>
         </div>
