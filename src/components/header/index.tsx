@@ -11,7 +11,7 @@ export function Header () {
         alt="Logo"
       />
 
-      <NavLink/>
+      <NavLink side="left" align="start"/>
 
       <Link href="#" className="tablet:flex text-[0.875rem] bg-green gap-4 rounded-[3px] px-5 py-4 hidden items-center font-bold text-nowrap uppercase text-white transition-all hover:opacity-80">
         <FaWhatsapp className="size-5"/> Falar com especialista

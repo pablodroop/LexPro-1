@@ -6,21 +6,26 @@ import { usePathname } from 'next/navigation'
 import { FaWhatsapp } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-export function NavLink () {
-  const params = usePathname()
+interface NavLinkProps {
+  side?: "left" | "top" | "right" | "bottom" | undefined;
+  align?: "center" | "start" | "end" | undefined
+}
+
+export function NavLink ({side, align}: NavLinkProps) {
+  const path = usePathname()
     return (
       <>
         <nav className="tablet:flex hidden items-center flex-1 justify-evenly max-w-[50rem]">
-          <Link href="home" className={`text-4 font-bold uppercase hover:text-brown400 ${params == '/home' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+          <Link href="home" className={`text-4 font-bold uppercase hover:text-brown400 ${path == '/home' ? 'text-brown400' : 'text-gray500' } transition-all`}>
             Home
           </Link>
-          <Link href="office" className={`text-4 text-nowrap font-bold uppercase hover:text-brown400 ${params == '/office' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+          <Link href="office" className={`text-4 text-nowrap font-bold uppercase hover:text-brown400 ${path == '/office' ? 'text-brown400' : 'text-gray500' } transition-all`}>
             O Escritório
           </Link>
-          <Link href="acting" className={`text-4 font-bold uppercase hover:text-brown400 ${params == '/acting' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+          <Link href="acting" className={`text-4 font-bold uppercase hover:text-brown400 ${path == '/acting' ? 'text-brown400' : 'text-gray500' } transition-all`}>
             Atuação
           </Link>
-          <Link href="contact" className={`text-4 font-bold uppercase hover:text-brown400 ${params === '/contact' ? 'text-brown400' : 'text-gray500'} transition-all`}>
+          <Link href="contact" className={`text-4 font-bold uppercase hover:text-brown400 ${path === '/contact' ? 'text-brown400' : 'text-gray500'} transition-all`}>
             Contato
           </Link>
         </nav>
@@ -32,28 +37,28 @@ export function NavLink () {
           </DropdownMenu.Trigger>
 
           <DropdownMenu.Portal>
-            <DropdownMenu.Content className="tablet:hidden z-20 bg-gray800 rounded space-y-4 px-2 py-4 mt-5 -mr-5" side="left" align="start">
+            <DropdownMenu.Content className="tablet:hidden z-20 bg-gray800 rounded space-y-4 px-2 py-4 mt-5 -mr-5" side={side} align={align}>
 
               <DropdownMenu.Item className="DropdownMenuItem">
-                <Link href="home" className={`text-3 font-bold uppercase hover:text-brown400 ${params == '/home' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+                <Link href="home" className={`text-3 font-bold uppercase hover:text-brown400 ${path == '/home' ? 'text-brown400' : 'text-gray500' } transition-all`}>
                   Home
                 </Link>
               </DropdownMenu.Item>
 
               <DropdownMenu.Item className="DropdownMenuItem">
-                <Link href="office" className={`text-3 text-nowrap font-bold uppercase hover:text-brown400 ${params == '/office' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+                <Link href="office" className={`text-3 text-nowrap font-bold uppercase hover:text-brown400 ${path == '/office' ? 'text-brown400' : 'text-gray500' } transition-all`}>
                   O Escritório
                 </Link>
               </DropdownMenu.Item>
 
               <DropdownMenu.Item className="DropdownMenuItem" disabled>
-                <Link href="acting" className={`text-3 font-bold uppercase hover:text-brown400 ${params == '/acting' ? 'text-brown400' : 'text-gray500' } transition-all`}>
+                <Link href="acting" className={`text-3 font-bold uppercase hover:text-brown400 ${path == '/acting' ? 'text-brown400' : 'text-gray500' } transition-all`}>
                   Atuação
                 </Link>
               </DropdownMenu.Item>
 
               <DropdownMenu.Item className="DropdownMenuItem" disabled>
-                <Link href="contact" className={`text-3 font-bold uppercase hover:text-brown400 ${params === '/contact' ? 'text-brown400' : 'text-gray500'} transition-all`}>
+                <Link href="contact" className={`text-3 font-bold uppercase hover:text-brown400 ${path === '/contact' ? 'text-brown400' : 'text-gray500'} transition-all`}>
                   Contato
                 </Link>
               </DropdownMenu.Item>
