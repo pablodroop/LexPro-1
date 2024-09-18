@@ -8,7 +8,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: 'var(--font-poppins)'
+      sans: 'var(--font-poppins)',
+      inter: 'var(--font-inter)'
     },
     colors: {
       gray400: 'hsl(var(--gray400))',
@@ -25,11 +26,12 @@ const config: Config = {
       blue: 'hsl(var(--blue))',
       green: 'hsl(var(--green))',
       white: 'hsl(var(--white))',
+      bgButton: 'hsl(var(--bg-button))',
     },
     screens: {
       'tablet': '750px',
       'cell': '600px',
-    }
+    },
   },
   plugins: [],
 };
