@@ -17,9 +17,9 @@ export default function Home() {
             Sua Empresa protegida,  crescimento garantido!
           </h1>
 
-          <p className="cell:text-start text-center text-brown400 text-[1.25rem] font-medium font-inter">
-            Alavanque seus negócios com nossa expertise jurídica <br/> 
-            sob medida.Simplificamos a conformidade legal para <br/>
+          <p className="cell:text-start text-center text-brown400 max-w-[50rem] text-[1.25rem] font-medium font-inter">
+            Alavanque seus negócios com nossa expertise jurídica  
+            sob medida.Simplificamos a conformidade legal para 
             que você possa focar no crescimento.
           </p>
 
@@ -37,7 +37,7 @@ export default function Home() {
       <section className="py-12 w-full cell:block flex flex-col items-center justify-center px-8 tablet:px-[8.5rem] bg-gray600">
         <HeaderHome title="Atuação" subTitle="áreas de"/>
 
-        <div className="cell:flex-row flex flex-col items-center justify-between mt-20 gap-[1.87rem]">
+        <div className="cell:flex-row flex flex-col w-full items-center justify-between mt-20 gap-[1.87rem]">
           <Card subTitle="Consultoria" title="Jurídica" svgChildren={<SvgPerson/>}>
             <>
               <p>Análise e aconselhamento jurídico para tomadas de decisões estratégicas.</p>
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
 
         <div className="cell:flex grid grid-cols-1 items-center justify-between gap-11 mt-24">
-          <img className="object-cover h-[32rem] cell:w-auto w-full" src="2.png" alt="Imagem de um advogado" />
+          <img className="object-cover  cell:w-auto w-full" src="2.png" alt="Imagem de um advogado" />
 
           <div className="flex flex-col cell:items-start items-center justify-center  gap-12">
             <div className="cell:block flex flex-col items-center">
@@ -71,7 +71,7 @@ export default function Home() {
               <h1 className="text-6xl text-gray500 font-light tracking-[.8rem]">Escritório</h1>
             </div>
 
-            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[40rem]">
+            <p className="text-base font-normal font-inter text-gray500 cell:text-start text-center max-w-[50rem]">
               A LexPro destaca-se por oferecer uma gama abrangente de serviços jurídicos, personalizados para atender 
               às demandas exclusivas de seus clientes corporativos. A abordagem estratégica e a especialização 
               em áreas cruciais para as empresas estabelecem a LexPro como parceira confiável na jornada 
