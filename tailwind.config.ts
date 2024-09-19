@@ -32,6 +32,9 @@ const config: Config = {
       'tablet': '750px',
       'cell': '600px',
     },
+    boxShadow: {
+      "card": "0px 10px 40px 0px rgba(0, 0, 0, 0.25)"
+    }
   },
   plugins: [],
 };
