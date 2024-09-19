@@ -5,12 +5,13 @@ import { SvgPerson } from "./(components)/svg/svgPerson";
 import { SvgList } from "./(components)/svg/svgList";
 import { SvgDocument } from "./(components)/svg/svgDocument";
 import { Tag } from "./(components)/tag";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp  } from "react-icons/fa";
 
 
 export default function Home() {
   return (
     <div>
-      <section className="cell:flex-row py-20 px-8 tablet:px-[8.5rem] gap-10 flex flex-col items-center justify-between bg-gray800 bg-[url('/bg.png')] bg-no-repeat bg-cover">
+      <section className="cell:flex-row py-20 px-8 tablet:px-[8.5rem] gap-10 flex flex-col items-center justify-between bg-gray800 bg-[url('/bgImage1.png')] bg-no-repeat bg-cover">
         <div className="cell:block flex flex-col items-center space-y-[2.125rem]">
 
           <h1 className="text-5xl text-white content-start flex justify-end cell:text-start text-center items-center content font-semibold gap-2 before:bg-brown400 before:w-2 cell:before:h-24 before:mr-3 before:flex">
@@ -97,7 +98,85 @@ export default function Home() {
         </div>
       </section>
 
-      <section></section>
+      <section className="py-12 px-8 tablet:px-[8.5rem] gap-12 flex flex-col items-center justify-center bg-[url('/bgImage2.png')] bg-no-repeat bg-cover">
+         <HeaderHome title="Profissionais" subTitle="conheça nossos"/>
+
+         <div className="flex cell:flex-row flex-col items-center justify-between gap-[1.875rem] w-full">
+
+           <div className="flex flex-col items-center justify-center gap-9 flex-1">
+            <img src="dr1.png" alt="Foto de um advogado" className="object-cover w-full"/>
+
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="text-[1.75rem] text-brown400 font-semibold">Dr. Mário Sérgio</h2>
+              <span className="text-base text-gray500">Direito Trabalhista</span>
+            </div>
+
+            <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] w-full">
+              <a href="">
+                <FaWhatsapp className="size-6"/>
+              </a>
+              <a href="">
+                <FaInstagram className="size-6"/>
+              </a>
+              <a href="">
+                <FaLinkedin className="size-6"/>
+              </a>
+              <a href="">
+                <FaFacebook className="size-6"/>
+              </a>
+            </nav>  
+           </div>
+
+           <div className="flex flex-col items-center justify-center gap-9 flex-1">
+            <img src="dr2.png" alt="Foto de um advogado" className="object-cover w-full"/>
+
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="text-[1.75rem] text-brown400 font-semibold">Dra. Anna Cruise</h2>
+              <span className="text-base text-gray500">Direito Previdenciário</span>
+            </div>
+
+            <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] px-24 w-full">
+              <a href="">
+                <FaWhatsapp className="size-6"/>
+              </a>
+              <a href="">
+                <FaInstagram className="size-6"/>
+              </a>
+              <a href="">
+                <FaLinkedin className="size-6"/>
+              </a>
+              <a href="">
+                <FaFacebook className="size-6"/>
+              </a>
+            </nav>  
+           </div>
+
+           <div className="flex flex-col items-center justify-center gap-9 flex-1">
+            <img src="dr3.png" alt="Foto de um advogado" className="object-cover w-full"/>
+
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="text-[1.75rem] text-brown400 font-semibold">Dr. Nicole Sanches</h2>
+              <span className="text-base text-gray500">Direito Empresarial</span>
+            </div>
+
+            <nav className="flex items-center justify-center gap-[10%] bg-brown400 rounded h-[3.188rem] px-24 w-full">
+              <a href="">
+                <FaWhatsapp className="size-6"/>
+              </a>
+              <a href="">
+                <FaInstagram className="size-6"/>
+              </a>
+              <a href="">
+                <FaLinkedin className="size-6"/>
+              </a>
+              <a href="">
+                <FaFacebook className="size-6"/>
+              </a>
+            </nav>  
+           </div>
+
+         </div>
+      </section>
 
       <section></section>
     </div>
